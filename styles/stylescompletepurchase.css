@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+#conteudo {
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    z-index: 2;
+    position: relative;
+    margin-bottom: 10px;
+    min-height: 600px;
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+#imgLogo {
+    z-index: 1;
+    position: relative;
+}
+
+#divTitle {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#titlePage {
+    color: black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#paymentContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#divPaymentMethod {
+    margin-right: 80px;
+    flex: 1;
+}
+
+#titlePayMeth {
+    font-size: 1.1em;
+    color: black;
+    margin-left: 50px;
+}
+
+#divChoosePaymentMethod {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.choosePaymentMethod {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.inputPay {
+    height: 60px;
+}
+
+.imgInput {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+/* FORMATING THE DIVS FROM PAYMENTS METHODS */
+.hideDiv{
+    display: none;
+}
+/* PIX */
+#divsWhichMethod {
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#divPix {
+    margin-left: -300px;
+    width: 600px;
+    height: 600px;
+    border-style: outset;
+    border-radius: 10px;
+}
+#divQrCode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#imgQrCode{
+    width: 250px;
+}
+#divPrice{
+    margin-top: -20px;
+    color: black;
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#btnCopyQrCode{
+    margin: 0 auto;
+    width: 250px;
+    height: 40px;
+    font-size: 1.15em;
+    color: white;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#btnCopyQrCode:hover{
+    width: 240px;
+    height: 40px;
+    border: 2px solid rgb(253, 103, 49);
+    background-color: rgb(253, 103, 49);
+    color: white;
+    font-size: 1.05em;
+}
+
+#divInfoPix{
+    margin-top: 30px;
+    text-align: center;
+    color: black;
+    flex-direction: column;
+}
+
+.negrito{
+    font-weight: bold;
+}
+/* CREDIT CARD MASTERCARD*/ 
+#divMasterCard{
+    display: flex;
+    flex-direction: column;
+}
+
+#divLeftSidePrice{
+    width: 400px;
+    height: 600px;
+    border: 2px solid orange;
+}
+
+#divRightSideInfos{
+    width: 500px;
+    height: 700px;
+    border: 2px solid orange;
+}

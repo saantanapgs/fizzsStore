@@ -1,0 +1,10 @@
+h2{
+    text-align: center;
+    color: #356bff;
+    letter-spacing: 5px;
+}
+#texto p{
+    font-size: 1.3em;
+    text-align: justify;
+    line-height: 40px;
+}

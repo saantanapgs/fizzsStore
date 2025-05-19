@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+#tituloPag{
+    text-align: center;
+    color: #356bff;
+    letter-spacing: 3px;
+    font-size: 26px;
+}
+.areaProdutos{
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+}
+
+#containerWrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.infoProduto{
+    display: flex;
+    flex-direction: column;
+}
+
+.divImgProduto{
+    width: 65px;
+    height: auto;
+    margin-right: 10px;
+}
+.imgProduto{
+    width: 65px;
+    border: none;
+    border-radius: 10px;
+}
+.titulo{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: arial black;
+}
+.valor{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: arial bakcl;
+}
+
+.divBtnRemover{
+    width: 25px;
+}
+.btnRemover{
+    background-color: transparent;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.btnRemover img:hover{
+    width: 22px;
+    height: 22px;
+}
+
+.imgBtnRemover{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+#imgBtnLimparCarrinho{
+    filter: invert(100%);
+    width: 100%;
+}
+
+#btnLimparCarrinho{
+    width: 45px;
+    height: 45px;
+    border: none;
+    background-color: transparent;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    left: 750px;
+    bottom: 45px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+#btnLimparCarrinho:hover{
+    width: 40px;
+    height: 40px;
+    margin: 3px 3px 5px;
+}
+
+.divMsgEmpty{
+    display: flex;
+    font-size: 25px;
+    font-family: cursive;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: -240px;
+}
+
+#btnFinalizarCompra{
+    width: 250px;
+    height: 50px;
+    font-size: 16px;
+    background-color: rgb(238, 95, 0);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: white;
+    border: none;
+    position: relative;
+    left: 1500px;
+    bottom: 300px;
+}
+
+#btnFinalizarCompra:hover{
+    background: transparent;
+    border: 2px solid rgb(238, 95, 0);
+    font-size: 15.5px;
+    color: rgb(238, 95, 0);
+}

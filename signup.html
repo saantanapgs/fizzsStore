@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizZ Sneakers</title>
+
+    <link rel='shortcut icon' href='imgs/favicon.png'>
+
+    <link rel="stylesheet" href="styles/stylesindex.css">
+    <link rel="stylesheet" href="styles/stylesformulary.css">
+
+    <script src="js/scriptsignup.js" defer></script>
+</head>
+
+<body>
+    <div id="geral">
+        <section id="cabecalho">
+            <div id="logo">
+                <a href="index.html"> <img id="imgLogo" src="imgs/logo.jpg"></a>
+            </div>
+
+            <nav id="menu">
+                <a href="index.html"> SNEAKERS </a>
+                 <a href="contact.html"> SUPPORT </a>
+                 <a href="signup.html"> SIGN UP </a>
+                 <a href="feedbacks.html">FEEDBACKS</a>
+                 <a href="bag.html">
+                    <img id="imgCarrinhoMenu" src="imgs/carrinho.png">
+                 </a>
+            </nav>
+        </section>
+        <section id="conteudo">
+            <div id="form">
+
+                <div class="divInput">
+                    <label for="nome">NAME</label>
+                    <input type="text" name="nome" id="nome" class="input" />
+                </div>
+
+                <div class="divInput">
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf" class="input" />
+                </div>
+
+                <div class="divInput">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" class="input" />
+                </div>
+
+                <div class="divInput">
+                    <label for="telefone">TELEPHONE</label>
+                    <input type="text" name="telefone" id="telefone" class="input" />
+                </div>
+
+                <div class="divInput">
+                    <label for="sexo">SEX</label>
+                    <input type="radio" name="sexo" id="sexo" value="M" /> Male
+                    <input type="radio" name="sexo" id="sexo" value="F" /> Female
+                    <input type="radio" name="sexo" id="sexo" value="X"/> Other
+                </div>
+
+                <div class="divInput">
+                    <label for="dataNascimento">DATE OF BIRTH</label>
+                    <input type="date" name="dataNascimento" id="dataNascimento" class="input" />
+                </div>
+
+                <label id="labelCEP" for="cep">CEP</label>
+                <div class="divInput inputCEP">
+                    <input type="text" name="cep" id="cep" class="input" />
+                    <span id="divCheckCep">
+                        <button id="btnCheck">
+                            <img id="imgCheck" src="imgs/search.png">
+                        </button>
+                        
+                    </span>
+                </div>
+                
+
+                <div class="divEnde">
+                    <div class="divInput">
+                        <label for="logradouro">PLACE</label>
+                        <input type="text" name="logradouro" id="place" class="input inputEnde" />
+                    </div>
+
+                    <div class="divInput">
+                        <label for="neighborhood">NEIGHBORHOOD</label>
+                        <input type="text" name="neighborhood" id="neighborhood" class="input inputEnde" />
+                    </div>
+
+
+                    <div class="divInput">
+                        <label for="numero">NUMBER</label>
+                        <input type="text" name="numero" id="number" class="input" />
+                    </div>
+
+                    <div class="divInput">
+                        <label for="cidade">CITY</label>
+                        <input type="text" name="cidade" id="city" class="input inputEnde" />
+                    </div>
+
+                    <div class="divInput">
+                        <label for="estado">STATE</label>
+                        <input type="text" name="estado" id="state" class="input inputEnde" />
+                    </div>
+                </div>
+
+                <div class="divInput">
+                    <label for="senha">PASSWORD</label>
+                    <input type="password" name="senha" id="senha" class="input" />
+                </div>
+
+                <div class="divInput">
+                    <input type="checkbox" checked name="promo" id="promo" value="S" />
+                    Wanna receive ours Promotions and events?
+                </div>
+
+
+                <div id="divBtn">
+                    <button id="btnLimpar"> SIGN UP </button>
+                    <button id="btnEnviar"> CLEAN </button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer id="rodape">
+            <p>&copy; 2023 All rights reserveds for FizZ Sneakers</p>
+            <p> CNPJ.: 00.008.111/1XXXX-00 - , Rua 123 s/n, ARACAJU, SE, 49001-350 tel.: 079998603465
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
