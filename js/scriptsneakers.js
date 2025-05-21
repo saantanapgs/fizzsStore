@@ -20,13 +20,13 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 16, imagem: "https://images.tcdn.com.br/img/img_prod/1088654/zoom_freak_4_tb_white_black_1407_3_aac353f3b8181c3f1bd3ccdd09051da5.jpg", titulo: "Nike Zoom Freak 4 NRG", valor: 179.99, subcategory: "white" }
     ];
 
-    function containersSneakers(sneaker) {
-        if (!Array.isArray(sneaker)) {
+    function containersSneakers(sneakersData) {
+        if (!Array.isArray(sneakersData)) {
             console.error("Os dados dos sneakers não estão em um formato válido.");
             return;
         }
 
-        for (const elem of sneaker) {
+        for (const elem of sneakersData) {
             const divCard = document.createElement("div");
             divCard.setAttribute("class", "card");
 
@@ -101,9 +101,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Função para adicionar no carrinho
-    function addCarrinho(sneaker) {
+    function addCarrinho(sneakersData) {
         let carrinhoItens = JSON.parse(localStorage.getItem('carrinhoItens')) || [];
-        carrinhoItens.push(sneaker);
+        carrinhoItens.push(sneakersData);
         localStorage.setItem('carrinhoItens', JSON.stringify(carrinhoItens));
     }
 
